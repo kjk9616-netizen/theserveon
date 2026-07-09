@@ -4255,6 +4255,95 @@ address {
   word-break: keep-all;
 }
 
+.consultation-form {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.consultation-form label {
+  display: block;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.form-required {
+  margin-left: 2px;
+  color: var(--green);
+}
+
+.form-optional {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 8px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--navy);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.consultation-form textarea {
+  min-height: 96px;
+  padding: 12px 16px;
+  resize: vertical;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+}
+
+.form-scope {
+  margin: 22px 0 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.form-scope legend {
+  padding: 0 4px;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.form-scope label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 16px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.form-notes {
+  display: block;
+  margin-top: 22px;
+}
+
+.consultation-form .btn {
+  margin-top: 24px;
+}
+
 .customer-assurance-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -4374,8 +4463,13 @@ address {
   .customer-contact-panel,
   .customer-ready-grid,
   .customer-method-grid,
-  .customer-assurance-grid {
+  .customer-assurance-grid,
+  .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .consultation-form {
+    padding: 22px;
   }
 
   .customer-contact-panel {
