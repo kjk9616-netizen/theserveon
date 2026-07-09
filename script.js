@@ -95,6 +95,6 @@ if (consultationForm) {
 
     const subject = encodeURIComponent(`서브온 병원동행 상담 신청 - ${data.get("name") || ""}`);
     const body = encodeURIComponent(lines.join("\n"));
-    window.location.href = `mailto:contact@theserveon.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:help@theserveon.com?subject=${subject}&body=${body}`;
   });
 }
