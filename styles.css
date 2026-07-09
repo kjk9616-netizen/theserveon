@@ -1310,46 +1310,13 @@ h3 {
   overflow: hidden;
 }
 
-.service-photo-fallback {
+.service-hero-panel img {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  gap: 18px;
-  padding-bottom: 46px;
-}
-
-.service-person {
-  width: 130px;
-  height: 285px;
-  border-radius: 65px 65px 8px 8px;
-  background:
-    radial-gradient(circle at 50% 18%, #f0c7a9 0 16%, transparent 17%),
-    linear-gradient(#eee5da, #eee5da);
-}
-
-.service-person.elder::before,
-.service-person.manager::before {
-  content: "";
-  display: block;
-  width: 76px;
-  height: 42px;
-  margin: 34px auto 0;
-  border-radius: 40px 40px 24px 24px;
-  background: #d8d8d4;
-}
-
-.service-person.manager {
-  width: 150px;
-  height: 330px;
-  background:
-    radial-gradient(circle at 50% 18%, #f0c7a9 0 15%, transparent 16%),
-    linear-gradient(var(--navy), var(--navy));
-}
-
-.service-person.manager::before {
-  background: #1d2634;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .service-floating-card {
@@ -1777,11 +1744,6 @@ address {
 
   .service-hero-panel {
     min-height: 360px;
-  }
-
-  .service-photo-fallback {
-    transform: scale(0.82);
-    transform-origin: bottom center;
   }
 
   .service-scope-grid,
