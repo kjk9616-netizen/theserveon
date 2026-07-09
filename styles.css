@@ -1854,52 +1854,13 @@ address {
   box-shadow: var(--shadow-md);
 }
 
-.process-person {
+.process-visual img {
   position: absolute;
-  bottom: 114px;
-  border-radius: 75px 75px 10px 10px;
-}
-
-.process-person::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -66px;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background: #f0c7a9;
-  transform: translateX(-50%);
-}
-
-.process-person::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -78px;
-  width: 78px;
-  height: 46px;
-  border-radius: 42px 42px 24px 24px;
-  background: #d8d8d4;
-  transform: translateX(-50%);
-}
-
-.process-person.elder {
-  left: 22%;
-  width: 118px;
-  height: 238px;
-  background: #eee5da;
-}
-
-.process-person.manager {
-  right: 18%;
-  width: 134px;
-  height: 290px;
-  background: var(--navy);
-}
-
-.process-person.manager::after {
-  background: #1f2835;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .assurance-card {
