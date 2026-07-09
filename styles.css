@@ -3737,74 +3737,13 @@ address {
   box-shadow: var(--shadow-md);
 }
 
-.pricing-visual::before {
-  content: "";
+.pricing-visual img {
   position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 95px;
-  height: 92px;
-  border-radius: 50%;
-  background: rgba(15, 79, 69, 0.1);
-}
-
-.pricing-person {
-  position: absolute;
-  bottom: 118px;
-  width: 118px;
-  height: 230px;
-}
-
-.pricing-person::before,
-.pricing-person::after {
-  content: "";
-  position: absolute;
-}
-
-.pricing-person::before {
-  top: 0;
-  left: 30px;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-}
-
-.pricing-person::after {
-  top: 62px;
-  left: 14px;
-  width: 90px;
-  height: 168px;
-  border-radius: 42px 42px 20px 20px;
-}
-
-.pricing-person.elder {
-  left: 22%;
-}
-
-.pricing-person.elder::before {
-  background:
-    radial-gradient(circle at 43% 18%, #eef2f2 0 24%, transparent 25%),
-    #f1d5be;
-}
-
-.pricing-person.elder::after {
-  background: #f2e8dc;
-}
-
-.pricing-person.staff {
-  right: 21%;
-  height: 268px;
-}
-
-.pricing-person.staff::before {
-  background:
-    radial-gradient(circle at 52% 18%, #1f2630 0 25%, transparent 26%),
-    #f0c9b3;
-}
-
-.pricing-person.staff::after {
-  height: 206px;
-  background: var(--navy);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .pricing-visual-card {
@@ -4115,19 +4054,6 @@ address {
 
   .pricing-visual {
     min-height: 330px;
-  }
-
-  .pricing-person {
-    transform: scale(0.78);
-    transform-origin: bottom center;
-  }
-
-  .pricing-person.elder {
-    left: 16%;
-  }
-
-  .pricing-person.staff {
-    right: 15%;
   }
 
   .pricing-visual-card {
