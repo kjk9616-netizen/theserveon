@@ -605,6 +605,16 @@ h3 {
   box-shadow: var(--shadow-sm);
 }
 
+.timeline-list li:not(:nth-child(4n))::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  right: -18px;
+  width: 18px;
+  height: 2px;
+  background: var(--mint-strong);
+}
+
 .step-badge {
   display: grid;
   place-items: center;
@@ -615,6 +625,11 @@ h3 {
   background: var(--navy);
   color: var(--mint-strong);
   font-weight: 900;
+}
+
+.timeline-list li:last-child .step-badge {
+  background: var(--green);
+  color: var(--white);
 }
 
 .timeline-list i {
@@ -1013,7 +1028,7 @@ h3 {
   color: var(--navy);
   text-align: left;
   font: inherit;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 900;
   cursor: pointer;
 }
@@ -1032,21 +1047,34 @@ h3 {
   color: var(--green);
   font-size: 22px;
   line-height: 1;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
 .faq-item.is-open button::after {
-  content: "-";
+  content: "+";
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(-50%) rotate(135deg);
 }
 
 .faq-panel {
-  display: none;
-  padding: 0 22px 24px;
+  display: grid;
+  grid-template-rows: 0fr;
+  padding: 0 22px;
+  overflow: hidden;
   color: var(--muted);
+  transition: grid-template-rows 0.28s ease, padding 0.28s ease;
+}
+
+.faq-panel > p {
+  overflow: hidden;
+  min-height: 0;
 }
 
 .faq-item.is-open .faq-panel {
-  display: block;
+  grid-template-rows: 1fr;
+  padding: 0 22px 24px;
 }
 
 .faq-panel p {
