@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.theserveon.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/service.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/process.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/managers.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/care-report.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/pricing.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theserveon.com/customer-center.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
