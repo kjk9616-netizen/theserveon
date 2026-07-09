@@ -2143,52 +2143,13 @@ address {
   overflow: hidden;
 }
 
-.manager-person {
+.manager-visual img {
   position: absolute;
-  bottom: 116px;
-  border-radius: 74px 74px 10px 10px;
-}
-
-.manager-person::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -70px;
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  background: #f0c7a9;
-  transform: translateX(-50%);
-}
-
-.manager-person::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -82px;
-  width: 82px;
-  height: 50px;
-  border-radius: 42px 42px 24px 24px;
-  background: #d8d8d4;
-  transform: translateX(-50%);
-}
-
-.manager-person.elder {
-  left: 24%;
-  width: 126px;
-  height: 260px;
-  background: #eee5da;
-}
-
-.manager-person.staff {
-  right: 23%;
-  width: 146px;
-  height: 320px;
-  background: var(--navy);
-}
-
-.manager-person.staff::after {
-  background: #1f2835;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .manager-visual-card {
@@ -2372,11 +2333,6 @@ address {
 
   .manager-visual {
     min-height: 380px;
-  }
-
-  .manager-person {
-    transform: scale(0.82);
-    transform-origin: bottom center;
   }
 
   .manager-standard-grid,
