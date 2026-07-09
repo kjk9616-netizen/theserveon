@@ -70,6 +70,6 @@ document.querySelectorAll(".js-blog").forEach((button) => {
 document.querySelectorAll(".js-youtube").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    window.open("https://www.youtube.com/watch?v=WaXcaMwFUy", "_blank", "noopener,noreferrer");
+    window.open("https://www.youtube.com/watch?v=WaXcaMwFUyI", "_blank", "noopener,noreferrer");
   });
 });
