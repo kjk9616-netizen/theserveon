@@ -63,13 +63,13 @@ document.querySelectorAll(".js-phone").forEach((button) => {
 document.querySelectorAll(".js-blog").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    window.open("https://blog.naver.com/serveon0818", "_blank", "noopener");
+    window.open("https://blog.naver.com/serveon0818", "_blank", "noopener,noreferrer");
   });
 });
 
 document.querySelectorAll(".js-youtube").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    window.open("https://www.youtube.com/watch?v=WaXcaMwFUy", "_blank", "noopener");
+    window.open("https://www.youtube.com/watch?v=WaXcaMwFUy", "_blank", "noopener,noreferrer");
   });
 });

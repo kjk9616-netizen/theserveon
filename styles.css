@@ -1804,8 +1804,8 @@ address {
 
 .process-hero-grid {
   display: grid;
-  grid-template-columns: minmax(540px, 0.98fr) minmax(350px, 0.58fr) minmax(300px, 0.46fr);
-  gap: 26px;
+  grid-template-columns: minmax(620px, 1fr) minmax(300px, 0.48fr) minmax(260px, 0.4fr);
+  gap: 20px;
   align-items: center;
 }
 
@@ -1989,37 +1989,6 @@ address {
   gap: 14px;
 }
 
-.process-card-grid-compact li {
-  min-height: 132px;
-  display: block;
-  padding: 20px 54px 20px 18px;
-}
-
-.process-card-grid-compact .process-number {
-  width: 36px;
-  height: 36px;
-  font-size: 13px;
-}
-
-.process-card-grid-compact h3 {
-  margin-top: 14px;
-  font-size: 17px;
-}
-
-.process-card-grid-compact p {
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.process-card-grid-compact i {
-  position: absolute;
-  right: 18px;
-  top: 28px;
-  width: 34px;
-  height: 34px;
-  font-size: 14px;
-}
-
 .process-card-grid li {
   position: relative;
   min-height: 170px;
@@ -2066,6 +2035,42 @@ address {
   color: var(--navy);
   font-style: normal;
   font-weight: 900;
+}
+
+.process-card-grid-compact li {
+  min-height: 132px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 6px 14px;
+  padding: 22px 54px 22px 18px;
+}
+
+.process-card-grid-compact .process-number {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+}
+
+.process-card-grid-compact h3 {
+  margin: 3px 0 0;
+  font-size: 17px;
+  word-break: keep-all;
+}
+
+.process-card-grid-compact p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.process-card-grid-compact i {
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
 }
 
 .process-actions {
@@ -2512,7 +2517,7 @@ address {
   min-height: 610px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(520px, 0.95fr) minmax(410px, 0.78fr) minmax(360px, 0.64fr);
+  grid-template-columns: minmax(580px, 1fr) minmax(360px, 0.62fr) minmax(320px, 0.56fr);
   gap: 18px;
   align-items: end;
 }
@@ -2539,6 +2544,7 @@ address {
   font-size: 49px;
   line-height: 1.17;
   font-weight: 950;
+  word-break: keep-all;
 }
 
 .hero-lead span {
@@ -4590,5 +4596,17 @@ address {
 
   .customer-final-card h2 {
     font-size: 29px;
+  }
+}
+
+@media (max-width: 820px) {
+  .process-card-grid-compact h3,
+  .process-card-grid-compact p {
+    max-width: calc(100% - 72px);
+  }
+
+  .process-card-grid-compact i {
+    right: 28px;
+    top: 30px;
   }
 }
