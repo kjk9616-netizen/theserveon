@@ -189,7 +189,7 @@ function createMobileStickyCta() {
   sticky.setAttribute("aria-label", "빠른 상담");
   sticky.innerHTML = `
     <a href="tel:1533-1683" data-event="click_phone">전화 상담</a>
-    <a href="customer-center.html#contact" data-event="click_kakao">카카오톡 문의</a>
+    <a href="https://pf.kakao.com/_NxcWjs" target="_blank" rel="noopener noreferrer" data-event="click_kakao">카카오톡 문의</a>
     <a href="customer-center.html#contact" data-event="click_situation_cta">가능 여부 확인</a>
   `;
   document.body.appendChild(sticky);
