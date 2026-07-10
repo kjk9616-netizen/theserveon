@@ -3987,7 +3987,7 @@ address {
 
 .price-table div {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   min-height: 92px;
   border-bottom: 1px solid var(--line);
@@ -4003,6 +4003,14 @@ address {
   color: var(--green);
   font-size: 30px;
   font-weight: 900;
+}
+
+.price-table small {
+  grid-column: 1 / -1;
+  margin-top: -10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .price-notice {
