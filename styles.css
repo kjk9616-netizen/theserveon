@@ -1832,6 +1832,7 @@ address {
 }
 
 .process-visual {
+  container-type: inline-size;
   position: relative;
   min-height: 610px;
   overflow: hidden;
@@ -1871,7 +1872,8 @@ address {
 }
 
 .assurance-card strong {
-  font-size: 26px;
+  font-size: clamp(16px, 7.3cqw, 26px);
+  word-break: keep-all;
 }
 
 .assurance-card span {
