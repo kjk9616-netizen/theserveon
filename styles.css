@@ -4501,6 +4501,24 @@ address {
   margin-top: 22px;
 }
 
+.consultation-form .form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.consultation-form .form-consent input {
+  width: 18px;
+  min-height: 18px;
+  margin-top: 2px;
+  flex: 0 0 auto;
+}
+
 .consultation-form .btn {
   margin-top: 24px;
 }
@@ -5791,6 +5809,7 @@ address {
 }
 
 .hp-footer a,
+.hp-footer-links span,
 .hp-footer strong {
   color: #263a35;
 }
@@ -5817,6 +5836,10 @@ address {
   gap: 10px 24px;
   font-size: 14px;
   font-weight: 700;
+}
+
+.hp-footer-links span {
+  color: var(--muted);
 }
 
 .hp-footer-bottom {

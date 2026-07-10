@@ -97,9 +97,15 @@ function scrollToTarget(selector) {
 
 document.querySelectorAll(".js-scroll-contact").forEach((button) => {
   button.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (!scrollToTarget("#contact")) {
-      window.location.href = "customer-center.html#contact";
+    const href = button.getAttribute("href") || "";
+    const targetUrl = new URL(href, window.location.href);
+    const isSamePageHash = targetUrl.pathname === window.location.pathname && targetUrl.hash;
+
+    if (isSamePageHash) {
+      event.preventDefault();
+      if (!scrollToTarget(targetUrl.hash)) {
+        window.location.href = "customer-center.html#contact";
+      }
     }
   });
 });
