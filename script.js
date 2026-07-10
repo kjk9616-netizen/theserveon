@@ -69,6 +69,23 @@ document.querySelectorAll(".faq-item button").forEach((button) => {
   });
 });
 
+document.querySelectorAll(".js-faq-toggle").forEach((button) => {
+  button.addEventListener("click", () => {
+    const list = document.getElementById(button.getAttribute("aria-controls"));
+    const extra = list ? list.querySelector(".hp-faq-extra") : null;
+    if (!extra) return;
+
+    const willOpen = !extra.classList.contains("is-open");
+    extra.classList.toggle("is-open", willOpen);
+    button.setAttribute("aria-expanded", String(willOpen));
+    button.textContent = willOpen ? "질문 접기" : "모든 질문 보기";
+
+    if (willOpen) {
+      trackEvent("open_faq", { faq_question: "모든 질문 보기" });
+    }
+  });
+});
+
 function scrollToTarget(selector) {
   const target = document.querySelector(selector);
   if (target) {
