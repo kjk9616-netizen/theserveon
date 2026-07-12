@@ -151,6 +151,7 @@ if (consultationForm) {
     const scope = data.getAll("scope").join(", ") || "미선택";
     const lines = [
       `성함: ${data.get("name") || ""}`,
+      `환자와의 관계: ${data.get("relation") || ""}`,
       `연락처: ${data.get("phone") || ""}`,
       `병원명 및 진료과: ${data.get("hospital") || ""}`,
       `방문 예정 일시: ${data.get("visit-datetime") || ""}`,

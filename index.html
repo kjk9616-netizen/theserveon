@@ -33,6 +33,7 @@
           "병원동행 서비스",
           "공공 병원동행",
           "기업복지 병원동행",
+          "보험사 고객 병원동행",
           "케어리포트",
           "전문 동행매니저"
         ],
@@ -72,7 +73,7 @@
           "@id": "https://www.theserveon.com/#organization"
         },
         "areaServed": "대한민국",
-        "description": "전문 동행매니저가 병원 접수, 진료, 검사, 수납, 약국, 귀가까지 함께하고 보호자에게 케어리포트를 제공하는 병원동행 서비스"
+        "description": "전문 동행매니저가 병원 접수, 진료, 검사, 수납, 약국, 귀가까지 함께하고 보호자에게 케어리포트를 제공하는 병원동행 서비스입니다. 공공 병원동행 수행 경험과 기업복지 병원동행 운영 경험을 바탕으로 보호자가 확인할 수 있는 동행 절차를 안내합니다."
       },
       {
         "@type": "FAQPage",
@@ -208,8 +209,8 @@
         <a href="service.html">서비스 소개</a>
         <a href="process.html">이용 절차</a>
         <a href="managers.html">동행매니저</a>
+        <a href="reviews.html">이용 후기</a>
         <a href="care-report.html">케어리포트</a>
-        <a href="pricing.html">이용 요금</a>
         <a href="customer-center.html">문의하기</a>
       </nav>
       <div class="header-actions">
@@ -239,7 +240,7 @@
 
         <div class="hp-hero-visual">
           <div class="hp-hero-photo">
-            <img src="assets/serveon-hero-main.jpg" alt="어르신과 동행매니저가 함께하는 서브온 병원동행 서비스 이미지" loading="eager">
+            <img src="assets/serveon-hero-patient-manager.png" alt="어르신과 동행매니저가 함께하는 서브온 병원동행 서비스 이미지" loading="eager">
           </div>
 
           <aside class="hp-hero-phone" aria-label="케어리포트 모바일 예시">
@@ -248,6 +249,10 @@
             <small class="hp-phone-date">2024.05.20(월) 동행 요약</small>
             <div class="hp-phone-steps" aria-label="동행 단계 요약">
               <span>병원 도착</span><span>진료</span><span>검사</span><span>수납</span><span>귀가</span>
+            </div>
+            <div class="hp-phone-summary" aria-label="진료 요약">
+              <strong>진료 요약</strong>
+              <p>혈압 관리와 약 복용 안내를 전달받았습니다.</p>
             </div>
             <dl class="hp-phone-facts">
               <div><dt>진료과</dt><dd>내과</dd></div>
@@ -272,22 +277,23 @@
     <section class="hp-stats-wrap" aria-label="서브온 병원동행 누적 실적">
       <div class="container">
         <div class="hp-stats-card">
-          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-route"></use></svg></span><strong>동행 경험</strong><span>병원 일정 지원</span></div>
-          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-user-check"></use></svg></span><strong>보호자 안내</strong><span>진행 상황 전달</span></div>
-          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-badge"></use></svg></span><strong>매니저 배정</strong><span>상담 후 가능 여부 확인</span></div>
+          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-route"></use></svg></span><strong>25,000<em>건</em></strong><span>누적 동행</span></div>
+          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-user-check"></use></svg></span><strong>7,028<em>명</em></strong><span>회원</span></div>
+          <div><span class="hp-stats-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-badge"></use></svg></span><strong>728<em>명</em></strong><span>동행매니저</span></div>
         </div>
       </div>
     </section>
 
     <section class="hp-badges" aria-label="서브온 병원동행 서비스 신뢰 요소">
       <div class="container hp-badges-row">
+        <div><svg class="hp-ico" aria-hidden="true"><use href="#i-building"></use></svg><strong>공공 병원동행 수행 경험</strong></div>
+        <div><svg class="hp-ico" aria-hidden="true"><use href="#i-shield-check"></use></svg><strong>보건복지형 예비사회적기업</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-badge"></use></svg><strong>전문 자격 매니저</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-user-check"></use></svg><strong>1:1 면접</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-shield-check"></use></svg><strong>범죄경력조회</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-pin"></use></svg><strong>실시간 동선 안내</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-card"></use></svg><strong>모바일 간편결제</strong></div>
         <div><svg class="hp-ico" aria-hidden="true"><use href="#i-doc"></use></svg><strong>케어리포트 제공</strong></div>
-        <div><svg class="hp-ico" aria-hidden="true"><use href="#i-building"></use></svg><strong>공공 병원동행 수행 경험</strong></div>
       </div>
     </section>
 
@@ -295,26 +301,69 @@
       <div class="container hp-proof-grid">
         <div class="hp-proof-intro">
           <p class="eyebrow">검증된 운영 경험</p>
-          <h2 id="proof-title">운영 기준으로 확인하는<br>병원동행 서비스</h2>
-          <p>동행매니저 확인 절차, 상담 전 확인 항목, 케어리포트 제공 기준으로 보호자가 확인할 수 있는 병원동행을 안내합니다.</p>
+          <h2 id="proof-title">공공기관과 기업이 먼저 확인한<br>병원동행 서비스</h2>
+          <p>서브온은 개인 고객뿐 아니라 공공기관, 보험사, 대기업, 헬스케어 기업과의 협력 경험을 바탕으로 병원동행 서비스를 운영해왔습니다.</p>
+          <div class="hp-proof-metrics" aria-label="서브온 회사소개서 기반 주요 수치">
+            <p><strong>2021</strong><span>병원동행 서비스 시작</span></p>
+            <p><strong>25,000건</strong><span>누적 동행</span></p>
+            <p><strong>728명</strong><span>동행매니저</span></p>
+          </div>
           <a class="btn btn-secondary" href="service.html" aria-label="공공·기업 신뢰 실적 자세히 보기">자세히 보기</a>
         </div>
         <div class="hp-proof-cards">
-          <article class="hp-proof-card">
+          <article class="hp-proof-card is-featured">
+            <small>Public Reference</small>
             <span class="hp-proof-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-building"></use></svg></span>
-            <h3>상담 전 조건 확인</h3>
-            <p>병원명, 진료과, 방문 시간, 출발지와 귀가지, 이동 보조 필요 여부를 먼저 확인해 배정 가능 여부를 안내합니다.</p>
+            <h3>공공사업 수행 경험</h3>
+            <p>서울시, 보건복지부, 서초구 등 공공 병원동행 영역에서 수행·협약 이력을 보유하고 있습니다.</p>
+            <ul>
+              <li>2025년 서울시 병원 안심동행서비스 수행기관 선정 이력</li>
+              <li>2026년 서울시 1인가구 동행서비스 수행기관 선정 이력</li>
+              <li>보건복지부 일상돌봄서비스 병원동행 업무협약</li>
+              <li>서울시 서초구청 돌봄SOS센터 병원동행서비스 업무협약</li>
+            </ul>
           </article>
           <article class="hp-proof-card">
+            <small>Enterprise Partnership</small>
             <span class="hp-proof-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-handshake"></use></svg></span>
-            <h3>서비스 범위 명확화</h3>
-            <p>접수, 진료·검사 동행, 수납, 약국, 귀가 지원 등 병원 이용 절차 중심으로 필요한 지원 범위를 상담합니다.</p>
+            <h3>기업·보험사·헬스케어 제휴 경험</h3>
+            <p>기업 임직원 복지, 보험 가입 고객, 헬스케어·라이프케어 제휴 영역에서 병원동행 서비스를 운영해왔습니다.</p>
+            <ul>
+              <li>삼성생명 경인법인지역단 업무협약</li>
+              <li>현대제철 &amp; 현대 ISC 업무협약</li>
+              <li>메가스터디교육 사내복지 도입 계약</li>
+              <li>ABB 코리아·네오위즈 사내복지 도입 계약</li>
+              <li>헬스케어·라이프케어 기업 제휴 경험</li>
+            </ul>
           </article>
           <article class="hp-proof-card">
+            <small>Certified Operation</small>
             <span class="hp-proof-icon" aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-shield-check"></use></svg></span>
-            <h3>사회서비스 제공기관 인증</h3>
-            <p>면접, 경력 확인, 기본 조회 절차 등 내부 기준을 바탕으로 동행매니저 배정 가능 여부를 확인합니다.</p>
+            <h3>사회서비스 운영 신뢰</h3>
+            <p>병원동행 전문기업으로서 사회서비스 제공 체계와 전문 매니저 운영 기반을 갖추고 있습니다.</p>
+            <ul>
+              <li>보건복지형 예비사회적기업 지정</li>
+              <li>사회서비스 제공자 등록</li>
+              <li>병원동행매니저 매칭프로그램 저작권 등록</li>
+              <li>사회복지사·요양보호사·간호사·간호조무사 등 전문 자격 매니저 기반 운영</li>
+            </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hp-company-trust" aria-labelledby="company-trust-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Serve On Company</p>
+          <h2 id="company-trust-title">서브온은 병원동행 전문기업입니다</h2>
+          <p>서브온은 2021년 병원동행 서비스를 시작해 개인 고객, 보험사 고객, 기업 고객, 공공기관 병원동행 영역에서 서비스를 운영해왔습니다. 전문 자격을 갖춘 동행매니저와 플랫폼 기반 진행 안내, 케어리포트, 모바일 결제 시스템을 바탕으로 보호자가 확인할 수 있는 병원동행 서비스를 제공합니다.</p>
+        </div>
+        <div class="hp-company-grid">
+          <article><span>Personal</span><h3>개인 고객</h3><p>가족·자녀·본인 신청, 전국 단위 서비스, 진료·재활치료·항암·내시경검사 일정 상담</p></article>
+          <article><span>Insurance</span><h3>보험사 고객</h3><p>삼성화재·삼성생명·DB손보 등 보험가입 고객 대상 병원동행 서비스 영역</p></article>
+          <article><span>B2B Welfare</span><h3>B2B 기업 고객</h3><p>제휴사·기업 고객, 사내복지 병원동행, 임상시험 병원동행 지원 경험</p></article>
+          <article><span>Public</span><h3>공공기관</h3><p>서울시, 돌봄SOS, 보건복지부 일상돌봄, 서초복지돌봄재단 등 공공사업 영역</p></article>
         </div>
       </div>
     </section>
@@ -375,6 +424,7 @@
           <p class="eyebrow hp-report-eyebrow">케어리포트</p>
           <h2 id="report-title">놓치지 않는 기록,<br>보호자의 마음을 안심으로.</h2>
           <p>진료 요약부터 처방, 다음 일정까지 꼼꼼히 기록하여<br>보호자님께 실시간으로 전달해 드립니다.</p>
+          <p class="hp-report-support">서브온의 케어리포트는 개인 고객뿐 아니라 공공·기업 병원동행 운영 경험을 바탕으로 보호자가 필요한 내용을 확인할 수 있도록 설계되었습니다.</p>
           <a class="btn hp-btn-white" href="care-report.html" aria-label="케어리포트 예시 보기">케어리포트 예시 보기</a>
         </div>
 
@@ -535,10 +585,9 @@
           <p>검색, 상담, 영상, 블로그까지 하나의 공식 정보로 연결합니다.</p>
         </div>
         <div class="hp-channels-grid">
-          <a href="https://www.theserveon.com/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-building"></use></svg></span><strong>공식 홈페이지</strong><span class="hp-channel-desc">검색 유입 고객의 기본 상담 경로</span></a>
-          <a class="js-blog" href="https://blog.naver.com/serveon0818" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-doc"></use></svg></span><strong>네이버 블로그</strong><span class="hp-channel-desc">신청 방법, 비용, 매니저 자격, 케어리포트 정보</span></a>
-          <a class="js-youtube" href="https://www.youtube.com/watch?v=WaXcaMwFUyI" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-play"></use></svg></span><strong>YouTube 영상</strong><span class="hp-channel-desc">브랜드 신뢰와 서비스 이해 보강</span></a>
-          <a href="https://pf.kakao.com/_NxcWjs" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-phone"></use></svg></span><strong>카카오 상담</strong><span class="hp-channel-desc">빠른 문의와 상담 연결</span></a>
+          <a class="js-blog" href="https://blog.naver.com/serveon0818" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-doc"></use></svg></span><strong>네이버 블로그</strong></a>
+          <a class="js-youtube" href="https://www.youtube.com/watch?v=WaXcaMwFUyI" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-play"></use></svg></span><strong>YouTube 영상</strong></a>
+          <a href="https://pf.kakao.com/_NxcWjs" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><svg class="hp-ico" aria-hidden="true"><use href="#i-phone"></use></svg></span><strong>카카오 상담</strong></a>
         </div>
       </div>
     </section>

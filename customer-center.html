@@ -12,14 +12,14 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://www.theserveon.com/"},{"@type":"ListItem","position":2,"name":"고객센터","item":"https://www.theserveon.com/customer-center.html"}]}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main">본문 바로가기</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="서브온 병원동행 서비스 홈"><span class="brand-mark" aria-hidden="true">S</span><span><strong>서브온</strong><small>Serve On</small></span></a><nav class="primary-nav" id="primary-nav" aria-label="주요 메뉴"><a href="service.html">서비스 소개</a><a href="process.html">이용 절차</a><a href="managers.html">동행매니저</a><a href="care-report.html">케어리포트</a><a href="pricing.html">이용 요금</a><a class="is-active" href="customer-center.html">고객센터</a></nav><div class="header-actions"><a class="header-phone" href="tel:1533-1683">1533-1683</a><a class="header-cta" href="#contact">가능 여부 확인</a></div><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+  <a class="skip-link" href="#main">본문 바로가기</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="서브온 병원동행 서비스 홈"><span class="brand-mark" aria-hidden="true">S</span><span><strong>서브온</strong><small>Serve On</small></span></a><nav class="primary-nav" id="primary-nav" aria-label="주요 메뉴"><a href="service.html">서비스 소개</a><a href="process.html">이용 절차</a><a href="managers.html">동행매니저</a><a href="reviews.html">이용 후기</a><a href="care-report.html">케어리포트</a><a class="is-active" href="customer-center.html">문의하기</a></nav><div class="header-actions"><a class="header-phone" href="tel:1533-1683">1533-1683</a><a class="header-cta" href="#contact">가능 여부 확인하기</a></div><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
   <main id="main">
     <section class="customer-hero" id="contact">
       <div class="container customer-hero-grid">
         <div class="customer-copy">
           <p class="eyebrow">고객센터</p>
-          <h1>서브온 병원동행 고객센터</h1>
-          <p class="customer-title">부모님 병원 일정,<br><span>먼저 가능 여부부터 확인하세요.</span></p>
+          <h1>부모님 병원 일정,<br>먼저 가능 여부부터 확인하세요</h1>
+          <p class="customer-title">빠르고 정확한 상담으로 병원동행 가능 여부를 안내합니다.</p>
           <p class="customer-description">병원명, 일정, 출발지, 귀가지를 알려주시면 수면내시경 보호자 동행, 부모님 대학병원 진료, 정기 치료 일정 등 상황에 맞춰 가능 여부를 확인해드립니다.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:1533-1683">전화 상담 1533-1683</a>
@@ -97,27 +97,34 @@
           <h2>아래 내용을 남겨주시면 담당자가 확인 후 연락드립니다</h2>
           <p>'상담 신청 보내기'를 누르면 입력하신 내용으로 이메일이 작성됩니다. 전송 후 담당자가 확인하여 순차적으로 연락드립니다.</p>
         </div>
-        <form class="consultation-form" id="consultation-form">
+        <form class="consultation-form target-consultation-form" id="consultation-form">
           <div class="form-grid">
-            <label>성함<span class="form-required" aria-hidden="true">*</span>
-              <input type="text" name="name" autocomplete="name" required placeholder="예: 홍길동">
+            <label>보호자 성함<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="이름을 입력해 주세요">
+            </label>
+            <label>환자와의 관계<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="relation" required placeholder="예: 자녀, 배우자, 본인">
+            </label>
+            <label>이용 희망 날짜<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="visit-datetime" required placeholder="날짜를 선택해 주세요">
+            </label>
+            <label>병원명<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="hospital" required placeholder="병원명을 입력해 주세요">
+            </label>
+            <label>출발지<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="departure" required placeholder="예: 서울 강남구 역삼동">
+            </label>
+            <label>귀가 위치<span class="form-required" aria-hidden="true">*</span>
+              <input type="text" name="destination" required placeholder="예: 서울 서초구 서초동">
             </label>
             <label>연락처<span class="form-required" aria-hidden="true">*</span>
-              <input type="tel" name="phone" autocomplete="tel" required placeholder="예: 010-1234-5678">
-            </label>
-            <label>병원명 및 진료과
-              <input type="text" name="hospital" placeholder="예: OO병원 내과">
-            </label>
-            <label>방문 예정 일시
-              <input type="text" name="visit-datetime" placeholder="예: 2026년 7월 15일 오전 10시">
-            </label>
-            <label>출발지
-              <input type="text" name="departure" placeholder="예: 서울 서초구 자택">
-            </label>
-            <label>귀가지
-              <input type="text" name="destination" placeholder="예: 출발지와 동일">
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="- 없이 번호만 입력해 주세요">
             </label>
           </div>
+          <label class="form-consent target-result-channel">
+            <input type="checkbox" name="result-channel" checked>
+            <span>문자/카카오톡으로 결과 받기</span>
+          </label>
           <fieldset class="form-scope">
             <legend>필요한 동행 범위 <span class="form-optional">(중복 선택 가능)</span></legend>
             <label><input type="checkbox" name="scope" value="접수">접수</label>
@@ -126,14 +133,14 @@
             <label><input type="checkbox" name="scope" value="약국">약국</label>
             <label><input type="checkbox" name="scope" value="귀가">귀가</label>
           </fieldset>
-          <label class="form-notes">특이사항
-            <textarea name="notes" rows="3" placeholder="이동 보조, 준비물, 반복 병원 일정 등 참고할 내용을 알려주세요."></textarea>
+          <label class="form-notes">문의 내용
+            <textarea name="notes" rows="4" placeholder="진료과목, 예약시간, 도움이 필요한 사항 등을 입력해 주세요."></textarea>
           </label>
           <label class="form-consent">
             <input type="checkbox" name="privacy-consent" required>
             <span>상담 진행을 위한 개인정보 수집·이용에 동의합니다. 입력하신 정보는 상담 목적 외 다른 용도로 사용되지 않습니다.</span>
           </label>
-          <button type="submit" class="btn btn-primary">상담 신청 보내기</button>
+          <button type="submit" class="btn btn-primary">상담 신청하기</button>
         </form>
       </div>
     </section>
@@ -145,14 +152,11 @@
           <h2>보호자가 안심하는 이유</h2>
           <p>상담 전에 확인할 수 있는 서비스 기준을 명확하게 안내합니다.</p>
         </div>
-        <div class="customer-assurance-grid">
-          <article><span aria-hidden="true">●</span><h3>실시간 진행 알림</h3><p>출발, 도착, 접수, 진료, 수납, 귀가 흐름을 보호자에게 안내합니다.</p></article>
-          <article><span aria-hidden="true">▤</span><h3>케어리포트 제공</h3><p>진료 과정에서 안내받은 내용과 다음 일정을 정리해 전달합니다.</p></article>
-          <article><span aria-hidden="true">◇</span><h3>전문 자격 매니저</h3><p>관련 자격과 경험을 확인한 동행매니저 배정을 안내합니다.</p></article>
-          <article><span aria-hidden="true">✓</span><h3>1:1 면접과 범죄경력조회</h3><p>면접, 경력 확인, 기본 조회 절차를 거친 매니저만 동행합니다.</p></article>
-          <article><span aria-hidden="true">↗</span><h3>병원 접수부터 귀가까지 지원</h3><p>자택 방문부터 병원 이용 절차와 귀가까지 함께합니다.</p></article>
-          <article><span aria-hidden="true">ID</span><h3>배정 전 프로필 안내</h3><p>배정되는 매니저의 자격과 확인 절차를 상담 흐름에 맞춰 안내합니다.</p></article>
-          <article><span aria-hidden="true">₩</span><h3>예상 이용료 확인</h3><p>일정, 지역, 서비스 범위에 따른 이용 조건을 실제 이용 전 확인합니다.</p></article>
+        <div class="target-contact-steps">
+          <article><span aria-hidden="true">01</span><h3>문의 접수</h3><p>전화, 카카오톡, 홈페이지를 통해 문의를 접수합니다.</p></article>
+          <article><span aria-hidden="true">02</span><h3>가능 여부 안내</h3><p>병원 일정, 지역, 시간 등을 확인하여 가능 여부를 빠르게 안내드립니다.</p></article>
+          <article><span aria-hidden="true">03</span><h3>매니저 배정</h3><p>확정 시 전문 매니저가 배정되며 상세 내용을 안내드립니다.</p></article>
+          <article><span aria-hidden="true">04</span><h3>서비스 진행</h3><p>약속된 시간에 맞춰 안전하고 편안하게 병원 동행을 제공합니다.</p></article>
         </div>
       </div>
     </section>
